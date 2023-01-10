@@ -1,0 +1,6 @@
+app_name='Example Patreon Credentials File'
+api_version='2'
+client_id='0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef'
+client_secret='0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef'
+creator_access_token='0123456789abcdef0123456789abcdef0123456789a'
+creator_refresh_token='0123456789abcdef0123456789abcdef0123456789a'
