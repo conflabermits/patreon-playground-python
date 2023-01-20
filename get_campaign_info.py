@@ -33,7 +33,7 @@ campaign_name = campaign_response.json_data['data'][0]['attributes']['name']
 #print('\tCampaign Name: ' + campaign_name)
 print(f'\tCampaign Name: {campaign_name}')
 
-campaign_id = campaign_response.json_data['data'][0]['attributes']['id']
+campaign_id = campaign_response.json_data['data'][0]['id']
 print(f'\tCampaign ID: {campaign_id}')
 
 campaign_headline = campaign_response.json_data['data'][0]['attributes']['creation_name']
