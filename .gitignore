@@ -130,4 +130,7 @@ dmypy.json
 
 # Personal credentials file
 .creds
+*_creds.py
 
+# VS Code
+.vscode
