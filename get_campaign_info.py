@@ -15,7 +15,13 @@ access_token = creator_access_token
 api_client = patreon.API(access_token)
 campaign_response = api_client.fetch_campaign()
 #campaign = campaign_response.data()[0]
-print(json.dumps(campaign_response.json_data, indent=4))
 #print('campaign is', campaign)
+print('Campaign response data:')
+print(json.dumps(campaign_response.json_data, indent=4))
 #user = campaign.relationship('creator')
 #print('user is', user)
+print('User data:')
+creator_id = campaign_response.json_data['data'][0]['relationships']['creator']['data']['id']
+print('\tCreator ID: ' + creator_id)
+campaign_name = campaign_response.json_data['data'][0]['attributes']['name']
+print('\tCampaign Name: ' + campaign_name)
