@@ -7,12 +7,10 @@ It had to be modified to actually spit out printable json. Nice.
 '''
 
 import patreon
-from local_creds import *
+from local_creds import creator_access_token
 import json
 
-access_token = creator_access_token
-
-api_client = patreon.API(access_token)
+api_client = patreon.API(creator_access_token)
 campaign_response = api_client.fetch_campaign()
 
 #campaign = campaign_response.data()[0]
